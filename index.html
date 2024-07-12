@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+        body {
+            text-align: center;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: fixed;
+            width: 100%;
+            margin: 0;
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        canvas {
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pong Game</h1>
+    <div id="menu">
+        <button id="play-vs-computer">Play vs Computer</button>
+        <button id="play-2-player">2 Player</button>
+    </div>
+    <canvas class="hidden"></canvas>
+    <p id="instructions" class="hidden">Use the Arrow keys to control the left player and W/S keys for the right player</p>
+    <script src="script.js"></script>
+</body>
+</html>
